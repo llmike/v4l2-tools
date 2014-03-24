@@ -1,0 +1,863 @@
+v4l-utils-1.0.0
+---------------
+
+Devin Heitmueller (1):
+      Don't call G_TUNER unless actually performing a tuning related call
+
+Diego Viola (1):
+      Fix spelling of Qt in .desktop file (typo)
+
+Gregor Jasny (20):
+      qv4l2: Silence Qt build tools invocation if silent mode is enabled
+      buildsystem: Do not bootstrap complete gettext for testing iconv
+      libdvb: Disable library installation by default
+      keytable: Always check if strtok return value is null
+      libv4lconvert: Prevent integer overflow by checking width and height
+      xc3082: Fix use after free in free_firmware()
+      libdvbv5: Fix reallocation in parse_lcn
+      rds-ctl: Always terminate strings properly
+      libdvbv5: Fix copy and paste error in parse_service()
+      libv4lconvert: Avoid division by 0 if gamma value is corrupted
+      pixfmt-test: Explicitely mention fall-through
+      v4l2-ctl: Do not read past end of num_planes array
+      libv4lconvert: Fix resource leak in sq905 error path
+      xc3028: Remove duplicate const
+      libdvbv5: Actually check for lock
+      libdvbv5: Free all memory in read_dvb_file error path
+      libdvbv5: Free all memory in parse_format_oneline error path
+      libdvbv5: Free tbl in dvb_read_section_with_id error paths
+      libdvbv5: Properly free temporary variables at end of parse_string
+      libdvbv5: Remove dead code in read_dvb_file.
+
+Guy Martin (6):
+      libdvbv5: Remove buggy parsing of extra DTV_foo parameters
+      libdvbv5: Add parsing of POLARIZATION
+      libdvbv5: Export dvb_fe_is_satellite()
+      libdvbv5: Fix satellite handling and apply polarization parameter to the frontend
+      libdvbv5: Use a temporary copy of the dvb parameters when tuning
+      dvbv5-zap: Parse the LNB from the channel file
+
+Hans Verkuil (20):
+      v4l2-dbg: remove unused source.
+      v4l2-compliance: refactor code to create invalid formats.
+      v4l2-compliance: improve overlay clipping tests.
+      v4l2-compliance: check that g_register fills the size field.
+      rds-ctl: fix percentage handling.
+      rds-ctl: support -d10 to refer to radio10.
+      v4l2-compliance: fix typo
+      v4l2-ctl: fix wrong array accesses in selection code.
+      v4l2-ctl: V4L2_BUF_TYPE_PRIVATE is no longer used.
+      Remove references to v4l2-chip-ident.h
+      Sync with latest 3.10.0-rc7  kernel.
+      libv4l2/log.c: add entry for new VIDIOC_DBG_G_CHIP_INFO ioctl.
+      Remove committed v4l2-chip-ident.h headers.
+      Sync with 3.11 kernel.
+      qv4l2: always update controls by default
+      libv4l2rds: fix coverity issues.
+      rds-ctl: fix coverity issues.
+      v4l2-dbg: fix coverity issues.
+      v4l2-ctl: fix coverity issues.
+      v4l2-ctl: (*XX).Foo -> XX->Foo
+
+Hans de Goede (3):
+      libv4l2: Add logging of dqbuf timestamps to debug logging
+      libv4l2: Add V4L2_PERROR convenience macro
+      libv4l2: do not log a ton of errors on device unplug
+
+Konke Radlow (3):
+      libv4l2rds: support RDS-EON and TMC-tuning info
+      rds-ctl: support RDS-EON and TMC-tuning info
+      libv4l2rds.c: moving functions to get rid of declarations
+
+Mauro Carvalho Chehab (3):
+      dvbv5-zap: sort the params by the key letter
+      dvbv5-zap: add an option to not filter pids
+      parse_string: fix encodings for Taiwan
+
+Ricardo Ribalda Delgado (1):
+      v4l2_compliance: -EINVAL is expected when ret is not 0
+
+v4l-utils-0.9.5
+---------------
+
+Gregor Jasny (1):
+      contrib: Add missing dist files for ioctl-test
+
+v4l-utils-0.9.4
+---------------
+
+André Roth (3):
+      libv4l-mplane: Fix compile flags to allow anonymous unions with gcc 4.5.5
+      libdvbv5: fix compile error
+      libdvbv5: fix anonymous unions on older gcc
+
+Antonio Ospite (2):
+      contrib/m920x/m920x_parse.pl: stricter check when extracting firmware
+      contrib/m920x/m920x_parse.pl: silence a warning
+
+Gregor Jasny (4):
+      libv4l: Add ASUS F2F with STK DC-1125 to upside down list
+      libv4l: Add Founder PC T14MF to upside down table
+      contrib: Add missing files to distribution list
+
+Hans Petter Selasky (1):
+      libv4l: Don't try to access sysfs 256 times when there is no sysfs
+
+Hans Verkuil (52):
+      qv4l2: add missing information for string and integer controls
+      qv4l2: add support for control events.
+      v4l2-compliance: allow EINVAL to be returned by S/TRY_FMT.
+      qv4l2: fix setting frequency for radio modulators
+      v4l-utils: sync with latest kernel.
+      v4l2-ctl: show used timestamp type.
+      v4l2-compliance: add check whether the timestamp is monotonic.
+      v4l-utils: fix make install problems with ln -s
+      v4l-utils: fix two 'dereferencing type-punned pointer' warnings
+      v4l2-compliance: reorganize verbosity options
+      ioctl-test: improve comments and add checks against ioctl num changes.
+      v4l2-compliance: improve read/write error reporting.
+      qv4l2: don't show "Query Standard" button if QUERYSTD isn't supported.
+      qv4l2: correctly update frame width and height for fixed resolutions.
+      v4l2-ctl: improve interval reporting.
+      v4l2-ctl: when streaming to file use bytesused instead of the full buffer.
+      v4l2-ctl: improve dv_timings reporting.
+      v4l2-ctl: support data_offset when streaming multiplanar formats.
+      v4l2-ctl: show buffers or key/P/B-frames when capturing.
+      v4l2-* utils: allow -d11 to refer to /dev/video11
+      v4l-utils: run sync-with-kernel.
+      v4l2-ctl: add support for 'COPY' timestamp and ctrl range events.
+      v4l2-compliance: add support for the new 'COPY' timestamp type.
+      v4l2-compliance: missing check on the frameinterval
+      v4l2-compliance: improve tests when TRY/S_FMT returns EINVAL.
+      qv4l2: do nothing if querystd does not detect a standard.
+      qv4l2: handle control range updates.
+      libv4l2/log.c: update list of ioctls.
+      v4l2-compliance: fix s_std test: ENODATA is a valid error code.
+      v4l2-ctl: don't produce verbose output for QBUF while streaming.
+      qv4l2: fix the way interlaced formats are displayed
+      v4l2-ctl: fix the field-per-second calculation
+      qv4l2/v4l2-ctl: fix the fields-per-second calculation
+      qv4l2/v4l2-ctl: fix rounding error in field-per-second calculation
+      v4l2-ctl: add the --concise option.
+      v4l-utils: sync with kernel, remove all references to the DV_PRESET API.
+      v4l-utils: sync to the latest kernel.
+      v4l-utils: sync-with-kernel.
+      v4l2-compliance: remove ChipIdent tests
+      v4l2-ctl: set bytesused for streaming to the output.
+      v4l2-compliance: fix RDS + CAP_READWRITE tests.
+      v4l2-compliance: really fix the RDS and V4L2_CAP_READWRITE tests
+      v4l2-ctl: add eos and decoder-stop support.
+      v4l2-ctl: use references instead of pointers.
+      v4l2-ctl: fix a small bug in the stream-count/skip handling.
+      v4l2-ctl: split off test pattern generation in a separate source.
+      v4l2-ctl: small improvements.
+      v4l2-ctl: poll/non-poll behavior fixes
+      v4l2-ctl: find_pixel_format couldn't handle output streams.
+      v4l-utils: sync with latest kernel.
+      v4l2-dbg: replace CHIP_IDENT with CHIP_INFO.
+      v4l2-ctl: introduce buffers class to simplify the streaming code
+
+Jean Delvare (1):
+      dvbv5-zap: Fix build warning
+
+Laurent Pinchart (2):
+      v4l2-compliance: Print invalid return codes in control tests
+      v4l2-compliance: Print invalid error_idx values in control tests
+
+Mauro Carvalho Chehab (50):
+      ir-keytable: Add support for testing EV_ABS events
+      keytable: merge two identical structures into one
+      keytable: reorder functions to put similar code together
+      keytable: Add handler for EV_REL type
+      keytable: also print code for unknown/unhandled events
+      keytable: Put events in numeric order
+      keytable: Add the remaining other unhandled events
+      keytable: Make the parsing code more generic
+      keytable: properly print the other MSC_* event names
+      keytable: be clear when a value is in hexadecimal
+      keytable: always use hexadecimal values for scancodes
+      dvbv5-zap: Allow to enable FE debug
+      Sync with kernel, with DVB stats
+      dvb-fe: add support for DVBv5 stats
+      dvbv5-zap: use the new DVBv5 stats API
+      dvb-fe: Add a flag to indicate if DVBv5 stats is in use
+      dvb-fe: Improve BER measurements for DVBv5
+      dvb-fe: Allow returning BER in a float value
+      dvbv5-zap: better display BER
+      dvb-fe: Add a method to report PER
+      dvb: Move the core of the stats logic to dvb-fe
+      dvb-fe: Fix PER statistics measurement
+      dvb-fe: Add support for a quality measurement
+      dvb: Rename a few DVB statistics
+      dvb: Add support for retrieving pre-BER data
+      dvb: use a macro for the number of Kernel stats
+      dvb: Better name the post-BER data
+      dvb: add support for pre-BER measurement
+      dvb: if the signal vanishes, bit/block error counters should vanish
+      dvbv5-zap: improve status display
+      dvbv5-scan: use library support for stats print
+      dvbv5-scan: also prints signal strength on tuner fail
+      ioctl-test: Auto-generate the list of ioctls to test
+      Add DVB headers to make sync-with-kernel
+      ioctl-test: expand it to also test DVB frontend/demux
+      dvbv5-scan: Fix get_signal logic
+      dvb-fe: Fix check for stats property
+      dvb-fe: Reserve space for the other DVBv5 properties
+      dvbv5-zap: Only go back if is there anything to clean
+      dvb5-scan: Improve output to better show the status
+      dvbv5-scan: don't be too verbose with status
+      dvb-scan: Don't call dvb_fe_get_stats() twice
+      dvb-fe: Supress statistics if signal lock vanishes
+      dvbv5-scan: timeout-multiply should also affect the timeout for scan
+      dvbv5-zap: add traffic monitor support
+      dvbv5-zap: output stats to stdout on monitor mode
+      dvbv5-zap: Better output at monitor mode
+      dvbv5-zap: don't stop monitoring for buffer underrun
+      dvbv5-zap: better represent low_traffic data in monitor mode
+      dvbv5-zap: print elapsed time when buffer overflow happens
+
+Riku Voipio (1):
+      v4l-utils: use openat when available
+
+Tzu-Jung Lee (2):
+      v4l2-ctl: break down the streaming_set()
+      v4l2-ctl: initial attempt to support M2M device streaming
+
+v4l-utils-0.9.3
+---------------
+* Synced with latest kernel headers
+
+* v4l2-ctl changes
+  * fixed bug in parse_subopt
+  * --list-buffers didn't work for multiplanar formats
+
+* v4l2-compliance
+  * work around missing ENODATA on (k)FreeBSD
+  * add test whether V4L2_MEMORY_DMABUF is supported
+  * add the new EXPBUF ioctl
+
+v4l-utils-0.9.2
+---------------
+* libv4l changes
+  * Add a libv4l plugin for mplane handling
+
+* v4l2-ctl changes
+  * load initial frames from the file as well
+  * add --stream-loop for streaming to an output
+  * zero bytesperline
+
+* test utility changes
+  * Add an OpenGL test application to test utilities in contrib
+
+* buildsystem changes
+  * Use udev pkgconfig file to populate installation directory
+  * Query Qt rcc tool location and fall back to rcc if not available
+
+v4l-utils-0.9.1
+---------------
+* libv4l changes
+  * Various Pixart JPEG fixes
+  * Add more notebooks to the upside down device table
+  * Use bytesperline instead of width (Robert Abel)
+  * Better luminance quantization table for Pixart JPEG (Jean-Francois Moine)
+  * Fix out of bounds array usage
+  * Prevent GCC 4.7 inlining error
+  * Add support for libjpeg >= v7
+  * Add new matching algorithm for upside down table
+  * Retry with another frame on JPEG header decode errors
+  * Improved JL2005BCD support (Theodore Kilgore)
+  * Set errno to EIO if getting 4 consecutive EAGAIN convert errors
+  * Make software autowhitebalance converge faster
+  * Add quirk support for forced tinyjpeg fallback
+
+* ir-keytable changes
+  * Fixed file parsing errors
+  * Add support for Sanyo IR and RC-5-SZ protocol
+  * Add missing mouse buttons in shipped keytables
+
+* libdvbv5 changes
+  * Initial release
+
+* libv4l2rds and rds-ctl
+  * Initial release (Konke Radlow)
+
+* qv4l2 changes
+  * Fix segfault when there are no inputs or outputs
+  * Fix endianess issues
+  * Add support for new timing ioctls
+  * Improve frequency and radio support
+  * Add VBI support
+  * Add ability to make a snapshot
+  * Add support to stream raw frames into a file
+
+* buildsystem changes
+  * Converted buildsystem to autotools
+  * Made buildsystem cross compiling friendly
+  * Support out of tree builds
+
+v4l-utils-0.8.5
+---------------
+* Utils changes
+  * parse_em28xx_drxk.pl: New parser for dumps of em28xx with drxk frontend
+    (mchehab)
+  * qv4l2: Add support for bitmap controls (hverkuil)
+  * v4l2-ctl: add support for the new bitmask control type (hverkuil)
+  * v4l2-ctl: add support for the control event (hverkuil)
+  * v4l2-ctl: small bugfixes (hverkuil)
+  * v4l2-compliance: various new tests (hverkuil)
+  * lib_media_dev: various fixes / cleanups (hdegoede)
+* libv4l changes
+  * Add some more laptop models to the upside down devices table (hdegoede)
+  * Add support for SE401 pixelformat (hdegoede)
+  * Software autogain tweaks (hdegoede)
+
+v4l-utils-0.8.4
+---------------
+* Utils changes
+  * Various small fixes (hverkuil, mchehab)
+  * qv4l2: Add support for configuring the framerate for devices which support
+    this like uvc cams (hdegoede)
+  * parse_tcpdump_log.pl: new parser for tcpdump / wireshark made usbmon
+    dumps (mchehab)
+  * New lib_media_dev lib, to pair audio devices with video devices
+    (and other combinations) for now this lives in utils and does not get
+    installed systemwide, as the API is not stable (mchehab)
+* libv4l changes
+  * Add many more laptop models to the upside down devices table (hdegoede)
+  * Some small bugfixes (hdegoede)
+  * Add vicam cameras to list of cameras need sw auto gain + whitebalance
+    (hdegoede)
+  * Add support for M420 pixelformat (hdegoede)
+  * Add support for Y10B pixelformat (Antonio Ospite)
+  * Add support for JPGL pixelformat (jfmoine)
+  * Modified (rewrote) jpeg decompression code to use libjpeg[-turbo], for
+    much lower cpu load when doing jpeg decompression (hdegoede)
+  * Detect usb connection speed of devices (hdegoede)
+  * Rewrite src format selection algorithm, taking bandwidth into account and
+    choosing the format which will give us the lowest CPU load while still
+    allowing 30 fps (hdegoede)
+  * Intercept S_PARM and redo src format selection based on new fps setting,
+    potentially switching from JPG to YUYV / M420 when the app lowers the
+    fps, resulting in a significant lower cpu load (hdegoede)
+
+v4l-utils-0.8.3
+---------------
+* Utils changes:
+  * Various ir-keytable improvements (mchehab)
+  * Various cx231xx parser improvements (mchehab)
+* libv4l changes
+  * Add a few more laptop models to the upside down devices table (hdegoede)
+  * Make libv4l1 compile with kernels >= 2.6.38, which no longer have the
+    v4l1 linux/videodev.h header (hdegoede)
+
+v4l-utils-0.8.2
+---------------
+* Utils changes:
+  * Various ir-keytable improvements (mchehab)
+  * Various qv4l2 fixes (hverkuil, hdegoede)
+  * Various v4l2-ctl fixes (hverkuil)
+  * Add parsers for cx231xx i2c, saa7134 pci, sn9c201 usb and generic usb
+    logs (mchehab)
+  * v4l2-compliance: lots of new tests (hverkuil)
+* libv4l changes
+  * Add many more laptop models to the upside down devices table (hdegoede)
+  * Add support for 8-bits grey format (V4L2_PIX_FMT_GREY) (mchehab)
+
+v4l-utils-0.8.1
+---------------
+* Utils changes:
+  * Various v4l-keytable improvements (mchehab)
+  * Various qv4l2 fixes (hverkuil)
+  * v4l2-ctl: Added support for s/g_dv_timings (Mats Randgaard)
+* libv4l changes (hdegoede):
+  * Add many more laptop models to the upside down devices table
+  * Detect short frames (and retry upto 3 times to get a non short frame)
+  * Support (uvc) cameras with more then 16 framesizes properly (Balint Reczey)
+  * libv4l1 no longer relies on the kernel v4l1 compat ioctl handling, many
+    thanks to Huzaifa Sidhpurwala for his work on this!
+  * Add support for Xirlink C-It YYVYUY
+  * Add support for konica yuv420 format
+
+v4l-utils-0.8.0
+---------------
+* Utils changes:
+  * Various v4l-keytable improvements (mchehab)
+  * Various v4l2-ctl fixes (hverkuil)
+  * Various qv4l2 fixes (hverkuil)
+* libv4l changes (hdegoede):
+  * Add many more laptop models to the upside down devices table
+  * Some minor bugfixes
+
+v4l-utils-0.7.91
+----------------
+* Utils changes:
+  * Improve v4l-keytable to better support IR (mchehab)
+  * Rename v4l-keytable to ir-keytable (mchehab)
+* libv4l changes (hdegoede):
+  * Add more laptop models to the upside down devices table
+  * Ignore convert errors in the first few frames of a stream
+
+v4l-utils-0.7.90
+----------------
+* This is the first release of v4l-utils, v4l-utils is the combination
+  of various v4l and dvb utilities which used to be part of v4l-dvb
+  mercurial kernel tree and libv4l.
+* This first version is 0.7.90, as the version numbers continue were libv4l
+  as a standalone source archive stops.
+* libv4l changes:
+  * Add more laptop models to the upside down devices table
+  * Fix Pixart JPEG ff ff ff xx markers removal, this fixes the occasional
+    corrupt frame we used to get (thanks to Németh Márton)
+  * Enable whitebalance by default on various sonixj based cams
+  * Enable whitebalance + gamma correction by default on all sonixb cams
+  * Enable gamma correction by default on pac7302 based cams
+
+Note all history below this line only applies to libv4l and not to the utils
+----------------------------------------------------------------------------
+
+libv4l-0.6.4
+------------
+* Add more laptop models to the upside down devices table
+* Add error checking to mr97310a decompression
+* Increase mr97310a minimum clockdiv upon 3 consecutive decoding errors
+* Add support for decompressing CPIA1 compressed YUV
+* Speed up autogain algorithm
+
+libv4l-0.6.3
+------------
+* Add more laptop models to the upside down devices table
+* Improved mr97310a decompression
+* Add support for decompressing yuv420 planar JPEG (one component per SOS,
+  3 SOS per frame), this is needed for w9968cf based cams
+* Add support for STV0680 raw bayer data
+
+libv4l-0.6.2
+------------
+* Add more laptop models to the upside down devices table
+* Put usb id in controls shm segment name for USB devices, to better
+  distuingish between devices plugged into the same port
+* Enable software whitebalance and autogain for mr97310a cameras
+* Improvements / tweaks to software autogain algorithm
+
+libv4l-0.6.1
+------------
+* Add more laptop models to the upside down devices table
+* Makefile changes to make life easier for the Debian package (Gregor Jasny)
+* Bugfix: fixup 320x240 output for pac7302 cameras
+* README improvements / clarifications (Bifferos)
+* Bugfix: fix reqbuf Device or Resource busy error when using v4l2_read()
+* Some applications want to use jpg format if possible, so do not hide
+  it from the apps (do not assume it always needs conversion)
+* Change controls shm segment name to include the username, as it is only
+  writable by the user (this means libv4l controls are per user) (Gregor Jasny)
+* Add support for decompressing sn9c2028 compressed bayer (Theodore Kilgore)
+* Report V4L2_FMT_FLAG_EMULATED in v4l2_fmtdesc flags for emulated formats
+
+libv4l-0.6.0
+------------
+* Recognize disabled controls and replace with fake equivalents where
+  available
+* Add support for decompressing ov511 and ov518 "JPEG", by piping data through
+  an external helper as I've failed to contact Mark W. McClelland to get
+  permission to relicense the code. If you know a working email address for
+  Mark W. McClelland, please let me know.
+* Add tons of laptop models to the upside down devices table
+* Support for rgb565 source format by Mauro Carvalho Chehab
+* Many bug fixes (see the mercurial tree for details)
+* Improved pac207 decompression code to also support higher compression
+  modes of the pac207, which enables us to use higher framerates.
+  Many many thanks to Bertrik Sikken for figuring the decompression out!
+
+libv4l-0.5.99
+-------------
+* Link libv4lconvert with -lm for powf by Gregor Jasny
+* Fix black screen on devices with hardware gamma control
+* Fix crash with devices on which we do not emulate fake controls
+* Add a patch by Hans Petter Selasky <hselasky@freebsd.org>, which should
+  lead to allowing use of libv4l (and the Linux webcam drivers ported
+  to userspace usb drivers) on FreeBSD, this is a work in progress
+
+libv4l-0.5.98
+-------------
+* Add software gamma correction
+* Add software auto gain / exposure
+* Add support for separate vflipping and hflipping
+* Add fake controls controlling the software h- and v-flipping
+* Add ability to determine upside down cams based on DMI info
+* Add the capability to provide 320x240 to apps if the cam can only
+  do 320x232 (some zc3xx cams) by adding black borders
+* Rewrite video processing code to make it easier to add more video filters
+  (and with little extra processing cost). As part of this the normalize
+  filter has been removed as it wasn't functioning satisfactory anyways
+* Support V4L2_CTRL_FLAG_NEXT_CTRL for fake controls by Adam Baker
+* Some makefile improvements by Gregor Jasny
+* Various small bugfixes and tweaks
+* The V4L2_ENABLE_ENUM_FMT_EMULATION v4l2_fd_open flag is obsolete, libv4l2
+  now *always* reports emulated formats through the ENUM_FMT ioctl
+
+libv4l-0.5.97
+-------------
+* As the version number shows this is a beta release of the 0.6.x series,
+  the big change here is the addition of video processing to libv4l
+  currently this only does whitebalance and normalizing (which turns out
+  to be useless for most cams) but the basic framework for doing video
+  processing, and being able to control it through fake v4l2 controls using
+  for example v4l2ucp is there.
+  The initial version of this code was written by 3 of my computer science
+  students: Elmar Kleijn, Sjoerd Piepenbrink and Radjnies Bhansingh
+* Currently whitebalancing gets enabled based on USB-ID's and it only gets
+  enabled for Pixart webcam's. You can force it being enabled with other
+  webcams by setting the environment variable LIBV4LCONTROL_CONTROLS, this
+  sets a bitmask enabling certain v4l2 controls which control the video
+  processing set it to 15 to enable both whitebalancing and normalize. You
+  can then change the settings using a v4l2 control panel like v4l2ucp
+* Only report / allow supported destination formats in enum_fmt / try_fmt /
+  g_fmt / s_fmt when processing, rotating or flipping.
+* Some applications / libs (*cough* gstreamer *cough*) will not work
+  correctly with planar YUV formats when the width is not a multiple of 8,
+  so crop widths which are not a multiple of 8 to the nearest multiple of 8
+  when converting to planar YUV
+* Add dependency generation to libv4l by: Gilles Gigan <gilles.gigan@gmail.com>
+* Add support to use orientation from VIDIOC_ENUMINPUT by:
+  Adam Baker <linux@baker-net.org.uk>
+* sn9c20x cams have occasional bad jpeg frames, drop these to avoid the
+  flickering effect they cause, by: Brian Johnson <brijohn@gmail.com>
+* adjust libv4l's upside down cam detection to also work with devices
+  which have the usb interface as parent instead of the usb device
+* fix libv4l upside down detection for the new v4l minor numbering scheme
+* fix reading outside of the source memory when doing yuv420->rgb conversion
+
+libv4l-0.5.9
+------------
+* Add support for MR97310A decompression by Kyle Guinn <elyk03@gmail.com>
+* Add support for sq905c decompression by Theodore Kilgore
+  <kilgota@auburn.edu>
+* Add hm12 support for the cx2341x MPEG encoder devices by Hans Verkuil
+  <hverkuil@xs4all.nl>
+
+libv4l-0.5.8
+------------
+* Add support for UYVY (for USB Apple iSight) patch by Julien BLACHE
+  <jb@jblache.org>
+* Remove v4lconvert_yvyu_to_yuv420 function as its functionality is
+  duplicate with v4lconvert_yuyv_to_yuv420
+* Use Requires.private where appropiate in .pc files (patch by Gregor Jasny)
+* Switch to using USB-id's instead of USB product string, as not all devices
+  set a unique product string. This fixes the upside down issues with
+  genius e-messenger 112 cams
+* Add support for sn9c20x-i420 format patch by Vasily Khoruzhick
+  <anarsoul@gmail.com>
+
+libv4l-0.5.7
+------------
+* Fix a nasty (and stupid) bug in the special try_fmt handling for UVC cams
+* Add some more verbose logging of various calls when asking libv4l to log
+  calls to a file, to assist in (future) debugging
+
+libv4l-0.5.6
+------------
+* Always do a s_fmt on uvc cams even if this changes nothing, as not doing
+  the s_fmt triggers a bug in the uvcvideo driver in kernel <= 2.6.28
+  (with certain cams)
+
+libv4l-0.5.5
+------------
+* Avoid the use of try_fmt as much as possible on UVC cams, instead use the
+  results of the enum_framesizes ioctl. This is because:
+  1) try_fmt actually causes IO with UVC cams making apps which do lot of
+     querrying of device capabilities slow (cheese)
+  2) some buggy cams don't like getting lots of UVC video probes and crash
+     when they do
+
+libv4l-0.5.4
+------------
+* Don't report DQBUF errors when errno is EAGAIN, this fixes flooding the
+  screen with errors when applications use non blocking mode
+* Add support for downscaling to make apps which want low resolutions
+  (skype, spcaview) happy when used with cams which can only do high
+  resolutions (by Lukáš Karas <lukas.karas@centrum.cz>).
+* Add support for converting to YV12 planar (next to the already supported
+  YU12 / I420)
+* Implement RGB/BGR24 -> YU/YV12 conversion
+
+libv4l-0.5.3
+------------
+* When conversion requires multiple passes don't alloc the needed temporary
+  buffer on the stack, as some apps (ekiga) use so much stack themselves
+  this causes us to run out of stack space
+
+libv4l-0.5.2
+------------
+* Add Philips SPC210NC to list of cams with upside down sensor, reported by
+  Rieker Flaik
+* Work around some drivers (pwc) not properly reflecting what one gets after a
+  s_fmt in their try_fmt answer
+* Check that s_fmt atleast gives us the width, height and pixelformat try_fmt
+  promised us, and if not disable conversion
+* Only check width, height and pixelformat when checking if we are doing
+  conversion, instead of doing a memcmp, as that are the only things which
+  the convert code checks
+* Take into account that the buffers only contain half of the lines when
+  field is V4L2_FIELD_ALTERNATE
+
+libv4l-0.5.1
+------------
+* Add support for software cropping from 352x288 -> 320x240 / 176x144 ->
+  160x120, so that apps which will only work with vga resolutions like
+  320x240 (Skype!) will work with cams/drivers which do not support cropping
+  CIF resolutions to VGA resolutions in hardware. This makes all 2.6.27 gspca
+  supported cams, except for the pac7302 which only does 640x480 (and skype
+  wants 320x240), work with skype
+* The v4lconvert_convert function was becoming a bit of a mess, so split the
+  functionailiy into separate v4lconvert_convert_pixfmt, v4lconvert_rotate and
+  v4lconvert_crop functions, and make v4lconvert_convert a frontend to
+  these
+* Do not link the wrapper libs against libpthread (patch from Gregor Jasny)
+
+libv4l-0.5.0
+------------
+* Add support for enumerating framesizes and frameintervals of emulated
+  formats when the driver supports it for the real format
+* Make sure the video device always gets opened RW even if the application
+  asks for RO
+* Add Genius E-Messenger 112 (093a:2476) to list of cams which have their
+  sensor upside down
+
+libv4l-0.4.3
+------------
+* Add suport for YUYV and YVYU packed pixel formats (Jean-Francois Moine)
+* Prefer compressed pixformats for resolutions > 176x144
+
+libv4l-0.4.2
+------------
+* The bayer pixel order in gspca's sonixb driver was different from that in
+  the sn9c102 driver from the mainline kernel, a recent gspca patch fixes
+  this, adjust libv4l to match (and make it work properly with the sn9c102
+  driver).
+
+libv4l-0.4.1
+------------
+* When the driver supports read() and we are not converting let the driver
+  handle read() instead of emulating it with mmap mode
+* Fix errors and warnings when compiling with ICC (Gregor Jasny)
+* Add support to libv4lconvert for rotating images 90 (for Pixart 7302 cams)
+  or 180 (Philips SPC200NC / Philips SPC300NC) degrees
+* Add support for Pixart custom JPEG format
+* Hide non public symbols (Gregor Jasny)
+* Fix and enable x86_64 asm jpeg decompress helper functions (Gregor Jasny)
+
+libv4l-0.4.0
+------------
+* Be more relaxed in our checks for mixing read and mmap access, we were
+  being more strict in this then certain kernel drivers (bttv) making xawtv
+  unhappy
+* With some drivers the buffers must be mapped before queuing, so when
+  converting map the (real) buffers before calling the qbuf ioctl
+* Add support for conversion to RGB24 (before we only supported BGR24) based
+  on a patch by Jean-Francois Moine
+* When the hardware supports a format natively prefer using the native
+  version over converting from another supported format
+* Various Makefile and pkgconfig file improvements by Gregor Jasny (Debian)
+* Drop the appl-patches dir, all application patches are now available and
+  tracked here: http://linuxtv.org/v4lwiki/index.php/Libv4l_Progress
+
+
+libv4l-0.3.9
+------------
+* Not only see /dev/video* but also /dev/v4l/* as video devices
+  (only affects libv4l1 and the wrappers) patch from Brandon Philips
+* Silence the creation of the .pc files in the Makefiles (Brandon Philips)
+* Part of the copyright headers refered GPL instead of LGPL due to a copy
+  and paste error (Brandon Philips)
+
+
+libv4l-0.3.8
+------------
+* work around wrong REQUEST_BUFFERS ioctl return code from certain drivers
+* add pkg-config (.pc) files for easier detection if libv4l is available
+* check capabilities for streaming, if the driver cannot do streaming don't
+  insert ourselves between the application and the driver
+* intercept get capabilites and report read capability (which we always offer)
+* query buffer: indicate the mapping state of our (fake) buffer in the flags
+
+
+libv4l-0.3.7
+------------
+* Add spca505/6 and spca508 cam specific formats (YUYV per line variations)
+
+
+libv4l-0.3.6
+------------
+* Add missing COPYING.LIB file
+
+
+libv4l-0.3.5
+------------
+* Make JPEG decoding more robust
+
+
+libv4l-0.3.4 (the brownpaperbag release)
+----------------------------------------
+* The mmap64 support in 0.3.3, has caused a bug in libv4l1 when running on
+  32 bit systems (who uses those now a days?), this bug caused v4l1
+  compatibility to not work at all, this release fixes this
+* Some apps (xawtv, kopete) use an ioctl wrapper internally for various
+  reasons. This wrappers request argument is an int, but the real ioctl's
+  request argument is an unsigned long. Passing the VIDIOC_xxx defines through
+  to the wrapper, and then to the real ioctl, causes the request to get sign
+  extended on 64 bit args. The kernel seems to ignore the upper 32 bits,
+  causing the sign extension to not make a difference. libv4l now also
+  ignores the upper 32 bits of the libv4lx_ioctl request argument on 64 bit
+  archs
+* Add a bugfix patch for kopete in the appl-patches dir, currently it assumes
+  that it got the width and height it asked for when doing a S_FMT, which is a
+  wrong assumption
+
+
+libv4l-0.3.3
+------------
+* Add open64 and mmap64 wrappers to the LD_PRELOAD wrapper libs, so that
+  they also work for applications compiled with FILE_OFFSET_BITS=64, this
+  fixes using them with v4l-info
+* While looking at xawtv in general, found a few bugs in xawtv itself, added
+  a patch to fix those to the appl-patches dir
+* Talking about the appl-patches dir, restore that as it accidentally got
+  dropped from 0.3.2
+* Be more verbose in various places when it comes to logging (esp errors)
+* Change v4lconvert_enum_fmt code a bit, so that it is easier to add more
+  supported destination formats to libv4lconvert
+* Don't return -EINVAL from try_fmt when we cannot convert because the cam
+  doesn't have any formats we know. Instead just return as format whatever the
+  cam returns from try_fmt, this new behavior is compliant with the v4l2
+  api as documented
+
+libv4l-0.3.2
+------------
+* Add support for converting from sn9c10x compressed data
+* Add support for converting from pac207 compressed data
+* Add "make install" Makefile target
+
+libv4l-0.3.1
+------------
+* Only serialize V4L2_BUF_TYPE_VIDEO_CAPTURE type ioctls
+* Do not return an uninitialized variable as result code for GPICT
+  (fixes vlc, but see below)
+* Add an apps-patches directory which includes:
+  * vlc-0.8.6-libv4l1.patch, modify vlc's v4l1 plugin to directly call into
+    libv4l1, in the end we want all apps todo this as its better then
+    LD_PRELOAD tricks, but for vlc this is needed as vlc's plugin system
+    causes LD_PRELOAD to not work on symbols in the plugins
+  * camorama-0.19-fixes.patch, small bugfixes to camorama's v4l1 support,
+    this patch only fixes _real_ bugs in camorama and does not change it to
+    work with v4l1compat. Although it does work better with these bugs fixed
+    :) With this patch and LD_PRELOAD=<path>/v4l1compat.so it works
+    flawless.
+
+
+libv4l-0.3
+----------
+* add extern "C" magic to public header files for c++ usage (Gregor Jasny)
+* Make libv4l1 and libv4l2 multithread use safe, see README.multi-threading
+* Add v4lx_dup() calls (and intercept dup() from the wrappers) this fixes
+  use with gstreamer's v4l2 plugin (tested with cheese)
+* Hopefully definitely fix compile errors on systems with a broken videodev2.h
+
+libv4l-0.2
+----------
+*** API change ***
+* Change v4lconvert api so that the v4lconvert struct always gets allocated
+  by the library, this to make it opaque, so that we can avoid future API
+  and ABI changes
+* Add support for yuv420 -> bgr24 conversion
+* When converting from v4l2 pixelformat to v4l12 palette return
+  VIDEO_PALETTE_YUV420P instead of VIDEO_PALETTE_YUV420 for
+  V4L2_PIX_FMT_YUV420 as that is what most apps seem to expect
+* override kernel v4l1 compat min / max size with our own more accurate values
+* fix v4l1 munmap bug where it didn't recognise the buffer being unmapped was
+  our fake buffer (fixes gstreamer v4l1 support, checked with cheese)
+* add support for reporting the emulated pixelformats with ENUM_FMT, this
+  defaults to off, and can be activated by passing a flag to enable it to
+  v4l2_fd_open. This gets enabled by default the wrappers.
+* v4l2: mmap the real device buffers before doing conversion when DQBUF gets
+  called before the application has called mmap (avoid crash).
+
+
+libv4l-0.1
+----------
+* major shuffle / rewrite now split into libv4l1, libv4l2, libv4lconvert
+  and 2 wrappers for binary compatibility
+* rewritten LGPL bayer decoding
+* many many other changes and fixes
+
+
+v4l1-compat-0.6 (V4L2 apps stay working)
+----------------------------------------
+* Do not go into emulation mode of rgb24 immediately, but only after a
+  GPICT ioctl which has not been preceded by a SPICT ioctl, AKA do not get
+  in the way of V4L2 read calls by doing conversion on them
+* Do not get in the way of mmap calls made by V4L2 applications
+* Fix swapping of red and blue in bayer -> bgr24 decode routine
+* Remember the v4l1 palette asked for with SPICT and return that, as
+  otherwise we loose information when going v4l1 -> v4l2 -> v4l1, for example
+  YUV420P becomes YUV420, which are separate in v4l1.
+
+
+v4l1-compat-0.5 (perfect camorama)
+----------------------------------
+* Allow changing of format after the buffers have been mapped, by tearing
+  down the entire house, changing the fundament and then rebuilding it.
+  Now changing the capture resolution in camorama works!
+* Fix jpeg decoding error reporting
+* Allow jpeg's with a height which is a multiple of 8 (was 16)
+* Remove a number of pretty new VIDIOCXXX -> string mappings from log.c,
+  fixing compiling with somewhat older kernels
+
+
+v4l1-compat 0.4
+---------------
+* Do not even try to change the format in v4l1_compat_set_format(), unless
+  _really_ necessary.
+* Cleanup ambigious use of src_format (no functional changes)
+* Drop the mmap hack for zerocopy access under certain conditions, one of them
+  that the cam can deliver the requested format. Although avoiding the
+  memcpy in this scenarios is a good thing todo, there were several issues
+  with the 0.3 implementation of this, fixing all these means adding lots of
+  special cases all over the code. So instead we just drop support and
+  always do atleast a memcpy (or a conversion). If an application cannot
+  live with the speed penalty this imposes it should be ported to v4l2.
+* Now that we've gotten rid of the zerocopy mmap hack, we can safely allow
+  mixing read and mmap based IO.
+* Explictly include linux/ioctl.h, to fix compile with kernel headers where
+  linux/videodev.h doesn't.
+
+
+v4l1-compat 0.3
+---------------
+* Don't allow multiple opens, in theory our code can handle it, but not all
+  v4l2 devices like it (ekiga does it and uvc doesn't like it).
+
+
+v4l1-compat 0.2
+---------------
+* When mmap gets passed an fd of -1 (anonymous map) don't look for it in our
+  list of managed fds, as we use -1 to mark unused entries (fixes ekiga
+  crashing). Also check for an fd of -1 in the other calls we intercept.
+* In close() start with removing the fd from our list of managed fds, this must
+  be done first, because as soon as we've done the actual close syscall, the
+  fd maybe returned by an open in another thread and we don't want to intercept
+  calls to this new fd.
+* Make unknown v4l1 palette types a normal level log messages instead of an
+  error.
+* When an applicaiton changes the width / height through the CMCAPTURE ioctl
+  remember the new width and height.
+* If the devices initial v4l2 pixformat has no corresponding v4l1 palette, try
+  setting a format which does (and which we emulate when necessary) so that
+  applicactions which just query the current format (GPICT) and then take
+  whatever they get will work (partially fixes camorama)
+* Implement our own SWIN instead of using kernel compat layer, for more
+  flexibility and better error checking
+
+
+v4l1-compat 0.1
+---------------
+* Initial public release.

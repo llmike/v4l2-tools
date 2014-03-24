@@ -1,0 +1,282 @@
+v4l2-ctl-stds.o: v4l2-ctl-stds.cpp /usr/include/unistd.h \
+ /usr/include/sys/platform.h /usr/include/sys/srcversion.h \
+ /usr/include/sys/compiler_gnu.h /usr/include/sys/cdefs.h \
+ /usr/include/x86/platform.h /usr/include/_pack64.h \
+ /usr/include/sys/target_nto.h /usr/include/_packpop.h \
+ /usr/include/confname.h /usr/include/process.h /usr/include/stdlib.h \
+ /usr/include/malloc.h /usr/include/alloca.h /usr/include/sys/wait.h \
+ /usr/include/signal.h /usr/include/sys/siginfo.h /usr/include/stdio.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/x86/string.h \
+ /usr/include/inttypes.h /usr/include/stdint.h getopt.h \
+ /usr/include/ctype.h /usr/include/yvals.h /usr/include/sys/types.h \
+ /usr/include/sys/stat.h /usr/include/fcntl.h /usr/include/errno.h \
+ /usr/include/sys/ioctl.h /usr/include/sys/sockio.h \
+ /usr/include/sys/time.h /usr/include/sys/select.h /usr/include/limits.h \
+ /usr/include/dirent.h /usr/include/math.h /usr/include/xtgmath.h \
+ /usr/include/ymath.h ../../config.h ../../include/linux/videodev2.h \
+ ../../include/linux/v4l2-common.h /usr/include/devctl.h \
+ /usr/include/time.h ../../include/linux/v4l2-controls.h \
+ ../../lib/include/libv4l2.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/string \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/c++config.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/os_defines.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/cpu_defines.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stringfwd.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/memoryfwd.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/char_traits.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_algobase.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/functexcept.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/exception_defines.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/cpp_type_traits.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/ext/type_traits.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/ext/numeric_traits.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_pair.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/move.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/concept_check.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_iterator_base_types.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_iterator_base_funcs.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/debug/debug.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_iterator.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/postypes.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/cwchar \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/cstddef \
+ /usr/qnx650/target/qnx6/usr/include/stddef.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/ctime \
+ /usr/qnx650/target/qnx6/usr/include/time.h \
+ /usr/qnx650/target/qnx6/usr/include/wchar.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/allocator.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/c++allocator.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/ext/new_allocator.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/new \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/exception \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/atomic_lockfree_defines.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/localefwd.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/c++locale.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/clocale \
+ /usr/qnx650/target/qnx6/usr/include/locale.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/iosfwd \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/cctype \
+ /usr/qnx650/target/qnx6/usr/include/ctype.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/ostream_insert.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/cxxabi_forced.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_function.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/backward/binders.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/range_access.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/basic_string.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/ext/atomicity.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/gthr.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sys/cpuinline.h \
+ /usr/include/x86/cpuinline.h /usr/include/sched.h \
+ /usr/include/sys/storage.h /usr/include/x86/smpxchg.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/atomic_word.h \
+ /usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/basic_string.tcc \
+ v4l2-ctl.h
+
+/usr/include/unistd.h:
+
+/usr/include/sys/platform.h:
+
+/usr/include/sys/srcversion.h:
+
+/usr/include/sys/compiler_gnu.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/x86/platform.h:
+
+/usr/include/_pack64.h:
+
+/usr/include/sys/target_nto.h:
+
+/usr/include/_packpop.h:
+
+/usr/include/confname.h:
+
+/usr/include/process.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/malloc.h:
+
+/usr/include/alloca.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/signal.h:
+
+/usr/include/sys/siginfo.h:
+
+/usr/include/stdio.h:
+
+/usr/include/string.h:
+
+/usr/include/strings.h:
+
+/usr/include/x86/string.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/stdint.h:
+
+getopt.h:
+
+/usr/include/ctype.h:
+
+/usr/include/yvals.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/errno.h:
+
+/usr/include/sys/ioctl.h:
+
+/usr/include/sys/sockio.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/limits.h:
+
+/usr/include/dirent.h:
+
+/usr/include/math.h:
+
+/usr/include/xtgmath.h:
+
+/usr/include/ymath.h:
+
+../../config.h:
+
+../../include/linux/videodev2.h:
+
+../../include/linux/v4l2-common.h:
+
+/usr/include/devctl.h:
+
+/usr/include/time.h:
+
+../../include/linux/v4l2-controls.h:
+
+../../lib/include/libv4l2.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/string:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/c++config.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/os_defines.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/cpu_defines.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stringfwd.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/memoryfwd.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/char_traits.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_algobase.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/functexcept.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/exception_defines.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/cpp_type_traits.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/ext/type_traits.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/ext/numeric_traits.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_pair.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/move.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/concept_check.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_iterator_base_types.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_iterator_base_funcs.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/debug/debug.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_iterator.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/postypes.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/cwchar:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/cstddef:
+
+/usr/qnx650/target/qnx6/usr/include/stddef.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/ctime:
+
+/usr/qnx650/target/qnx6/usr/include/time.h:
+
+/usr/qnx650/target/qnx6/usr/include/wchar.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/allocator.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/c++allocator.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/ext/new_allocator.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/new:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/exception:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/atomic_lockfree_defines.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/localefwd.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/c++locale.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/clocale:
+
+/usr/qnx650/target/qnx6/usr/include/locale.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/iosfwd:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/cctype:
+
+/usr/qnx650/target/qnx6/usr/include/ctype.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/ostream_insert.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/cxxabi_forced.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/stl_function.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/backward/binders.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/range_access.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/basic_string.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/ext/atomicity.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/gthr.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/gthr-default.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sys/cpuinline.h:
+
+/usr/include/x86/cpuinline.h:
+
+/usr/include/sched.h:
+
+/usr/include/sys/storage.h:
+
+/usr/include/x86/smpxchg.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/i486-pc-nto-qnx6.5.0/bits/atomic_word.h:
+
+/usr/qnx650/target/qnx6/usr/include/c++/4.8.1/bits/basic_string.tcc:
+
+v4l2-ctl.h:

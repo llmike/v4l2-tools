@@ -1,0 +1,58 @@
+ov511-decomp.o: ov511-decomp.c /usr/include/limits.h \
+ /usr/include/sys/platform.h /usr/include/sys/srcversion.h \
+ /usr/include/sys/compiler_gnu.h /usr/include/sys/cdefs.h \
+ /usr/include/x86/platform.h /usr/include/_pack64.h \
+ /usr/include/sys/target_nto.h /usr/include/_packpop.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/x86/string.h \
+ /usr/include/unistd.h /usr/include/confname.h /usr/include/process.h \
+ helper-funcs.h /usr/include/stdio.h /usr/include/stdlib.h \
+ /usr/include/malloc.h /usr/include/alloca.h /usr/include/sys/wait.h \
+ /usr/include/signal.h /usr/include/sys/siginfo.h /usr/include/errno.h
+
+/usr/include/limits.h:
+
+/usr/include/sys/platform.h:
+
+/usr/include/sys/srcversion.h:
+
+/usr/include/sys/compiler_gnu.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/x86/platform.h:
+
+/usr/include/_pack64.h:
+
+/usr/include/sys/target_nto.h:
+
+/usr/include/_packpop.h:
+
+/usr/include/string.h:
+
+/usr/include/strings.h:
+
+/usr/include/x86/string.h:
+
+/usr/include/unistd.h:
+
+/usr/include/confname.h:
+
+/usr/include/process.h:
+
+helper-funcs.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/malloc.h:
+
+/usr/include/alloca.h:
+
+/usr/include/sys/wait.h:
+
+/usr/include/signal.h:
+
+/usr/include/sys/siginfo.h:
+
+/usr/include/errno.h:

@@ -1,0 +1,1 @@
+strchrnul.o: strchrnul.c

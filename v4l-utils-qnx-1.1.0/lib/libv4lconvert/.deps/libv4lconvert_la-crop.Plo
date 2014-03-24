@@ -1,0 +1,89 @@
+libv4lconvert_la-crop.lo: crop.c /usr/include/string.h \
+ /usr/include/sys/platform.h /usr/include/sys/srcversion.h \
+ /usr/include/sys/compiler_gnu.h /usr/include/sys/cdefs.h \
+ /usr/include/x86/platform.h /usr/include/_pack64.h \
+ /usr/include/sys/target_nto.h /usr/include/_packpop.h \
+ /usr/include/strings.h /usr/include/x86/string.h libv4lconvert-priv.h \
+ ../../config.h /usr/include/stdio.h /usr/include/stdint.h \
+ /usr/include/sys/types.h /usr/include/setjmp.h \
+ ../../lib/include/libv4l-plugin.h ../../lib/include/libv4lconvert.h \
+ ../../include/linux/videodev2.h /usr/include/sys/time.h \
+ /usr/include/sys/select.h /usr/include/limits.h /usr/include/sys/ioctl.h \
+ /usr/include/sys/sockio.h ../../include/linux/v4l2-common.h \
+ /usr/include/devctl.h /usr/include/time.h \
+ ../../include/linux/v4l2-controls.h control/libv4lcontrol.h \
+ processing/libv4lprocessing.h processing/../libv4lsyscall-priv.h \
+ /usr/include/unistd.h /usr/include/confname.h /usr/include/process.h \
+ tinyjpeg.h
+
+/usr/include/string.h:
+
+/usr/include/sys/platform.h:
+
+/usr/include/sys/srcversion.h:
+
+/usr/include/sys/compiler_gnu.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/x86/platform.h:
+
+/usr/include/_pack64.h:
+
+/usr/include/sys/target_nto.h:
+
+/usr/include/_packpop.h:
+
+/usr/include/strings.h:
+
+/usr/include/x86/string.h:
+
+libv4lconvert-priv.h:
+
+../../config.h:
+
+/usr/include/stdio.h:
+
+/usr/include/stdint.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/setjmp.h:
+
+../../lib/include/libv4l-plugin.h:
+
+../../lib/include/libv4lconvert.h:
+
+../../include/linux/videodev2.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/limits.h:
+
+/usr/include/sys/ioctl.h:
+
+/usr/include/sys/sockio.h:
+
+../../include/linux/v4l2-common.h:
+
+/usr/include/devctl.h:
+
+/usr/include/time.h:
+
+../../include/linux/v4l2-controls.h:
+
+control/libv4lcontrol.h:
+
+processing/libv4lprocessing.h:
+
+processing/../libv4lsyscall-priv.h:
+
+/usr/include/unistd.h:
+
+/usr/include/confname.h:
+
+/usr/include/process.h:
+
+tinyjpeg.h:

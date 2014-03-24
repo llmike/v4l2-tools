@@ -1,0 +1,34 @@
+argp-pvh.o: argp-pvh.c ../../config.h argp.h /usr/include/stdio.h \
+ /usr/include/sys/platform.h /usr/include/sys/srcversion.h \
+ /usr/include/sys/compiler_gnu.h /usr/include/sys/cdefs.h \
+ /usr/include/x86/platform.h /usr/include/_pack64.h \
+ /usr/include/sys/target_nto.h /usr/include/_packpop.h \
+ /usr/include/ctype.h /usr/include/yvals.h /usr/include/errno.h
+
+../../config.h:
+
+argp.h:
+
+/usr/include/stdio.h:
+
+/usr/include/sys/platform.h:
+
+/usr/include/sys/srcversion.h:
+
+/usr/include/sys/compiler_gnu.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/x86/platform.h:
+
+/usr/include/_pack64.h:
+
+/usr/include/sys/target_nto.h:
+
+/usr/include/_packpop.h:
+
+/usr/include/ctype.h:
+
+/usr/include/yvals.h:
+
+/usr/include/errno.h:

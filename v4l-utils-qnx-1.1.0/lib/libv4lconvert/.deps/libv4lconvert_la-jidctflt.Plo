@@ -1,0 +1,28 @@
+libv4lconvert_la-jidctflt.lo: jidctflt.c /usr/include/stdint.h \
+ /usr/include/sys/platform.h /usr/include/sys/srcversion.h \
+ /usr/include/sys/compiler_gnu.h /usr/include/sys/cdefs.h \
+ /usr/include/x86/platform.h /usr/include/_pack64.h \
+ /usr/include/sys/target_nto.h /usr/include/_packpop.h \
+ tinyjpeg-internal.h /usr/include/setjmp.h
+
+/usr/include/stdint.h:
+
+/usr/include/sys/platform.h:
+
+/usr/include/sys/srcversion.h:
+
+/usr/include/sys/compiler_gnu.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/x86/platform.h:
+
+/usr/include/_pack64.h:
+
+/usr/include/sys/target_nto.h:
+
+/usr/include/_packpop.h:
+
+tinyjpeg-internal.h:
+
+/usr/include/setjmp.h:

@@ -1,0 +1,169 @@
+ioctl.o: ioctl.c /usr/include/sys/ioctl.h /usr/include/sys/platform.h \
+ /usr/include/sys/srcversion.h /usr/include/sys/compiler_gnu.h \
+ /usr/include/sys/cdefs.h /usr/include/x86/platform.h \
+ /usr/include/_pack64.h /usr/include/sys/target_nto.h \
+ /usr/include/_packpop.h /usr/include/sys/types.h \
+ /usr/include/sys/sockio.h /usr/include/sgtty.h /usr/include/sys/termio.h \
+ /usr/include/termios.h /usr/include/stdarg.h /usr/include/signal.h \
+ /usr/include/sys/siginfo.h /usr/include/unistd.h /usr/include/confname.h \
+ /usr/include/process.h /usr/include/string.h /usr/include/strings.h \
+ /usr/include/x86/string.h /usr/include/errno.h /usr/include/fcntl.h \
+ /usr/include/sys/stat.h /usr/include/devctl.h /usr/include/limits.h \
+ /usr/include/stdio.h /usr/include/sys/iomsg.h /usr/include/stdint.h \
+ /usr/include/sys/statvfs.h /usr/include/sys/neutrino.h \
+ /usr/include/sched.h /usr/include/time.h /usr/include/sys/storage.h \
+ /usr/include/sys/states.h /usr/include/x86/neutrino.h \
+ /usr/include/utime.h /usr/include/sys/ftype.h /usr/include/sys/mount.h \
+ /usr/include/sys/iomgr.h /usr/include/sys/pm.h \
+ /usr/include/sys/dcmd_chr.h /usr/include/sys/dcmd_ip.h \
+ /usr/include/inttypes.h /usr/include/sys/socket.h /usr/include/sys/uio.h \
+ /usr/include/net/if.h /usr/include/sys/queue.h /usr/include/net/dlt.h \
+ /usr/include/net/pfil.h /usr/include/net/cacheline.h \
+ /usr/include/pthread.h /usr/include/sys/cpuinline.h \
+ /usr/include/x86/cpuinline.h /usr/include/x86/smpxchg.h \
+ /usr/include/altq/if_altq.h /usr/include/sys/time.h \
+ /usr/include/sys/select.h /usr/include/net/if_arp.h \
+ /usr/include/sys/dcmd_misc.h /usr/include/stdlib.h /usr/include/malloc.h \
+ /usr/include/alloca.h /usr/include/sys/wait.h \
+ ../../include/linux/videodev2.h ../../include/linux/v4l2-common.h \
+ ../../include/linux/v4l2-controls.h /usr/include/crypto/cryptodev.h
+
+/usr/include/sys/ioctl.h:
+
+/usr/include/sys/platform.h:
+
+/usr/include/sys/srcversion.h:
+
+/usr/include/sys/compiler_gnu.h:
+
+/usr/include/sys/cdefs.h:
+
+/usr/include/x86/platform.h:
+
+/usr/include/_pack64.h:
+
+/usr/include/sys/target_nto.h:
+
+/usr/include/_packpop.h:
+
+/usr/include/sys/types.h:
+
+/usr/include/sys/sockio.h:
+
+/usr/include/sgtty.h:
+
+/usr/include/sys/termio.h:
+
+/usr/include/termios.h:
+
+/usr/include/stdarg.h:
+
+/usr/include/signal.h:
+
+/usr/include/sys/siginfo.h:
+
+/usr/include/unistd.h:
+
+/usr/include/confname.h:
+
+/usr/include/process.h:
+
+/usr/include/string.h:
+
+/usr/include/strings.h:
+
+/usr/include/x86/string.h:
+
+/usr/include/errno.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/sys/stat.h:
+
+/usr/include/devctl.h:
+
+/usr/include/limits.h:
+
+/usr/include/stdio.h:
+
+/usr/include/sys/iomsg.h:
+
+/usr/include/stdint.h:
+
+/usr/include/sys/statvfs.h:
+
+/usr/include/sys/neutrino.h:
+
+/usr/include/sched.h:
+
+/usr/include/time.h:
+
+/usr/include/sys/storage.h:
+
+/usr/include/sys/states.h:
+
+/usr/include/x86/neutrino.h:
+
+/usr/include/utime.h:
+
+/usr/include/sys/ftype.h:
+
+/usr/include/sys/mount.h:
+
+/usr/include/sys/iomgr.h:
+
+/usr/include/sys/pm.h:
+
+/usr/include/sys/dcmd_chr.h:
+
+/usr/include/sys/dcmd_ip.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/sys/socket.h:
+
+/usr/include/sys/uio.h:
+
+/usr/include/net/if.h:
+
+/usr/include/sys/queue.h:
+
+/usr/include/net/dlt.h:
+
+/usr/include/net/pfil.h:
+
+/usr/include/net/cacheline.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sys/cpuinline.h:
+
+/usr/include/x86/cpuinline.h:
+
+/usr/include/x86/smpxchg.h:
+
+/usr/include/altq/if_altq.h:
+
+/usr/include/sys/time.h:
+
+/usr/include/sys/select.h:
+
+/usr/include/net/if_arp.h:
+
+/usr/include/sys/dcmd_misc.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/malloc.h:
+
+/usr/include/alloca.h:
+
+/usr/include/sys/wait.h:
+
+../../include/linux/videodev2.h:
+
+../../include/linux/v4l2-common.h:
+
+../../include/linux/v4l2-controls.h:
+
+/usr/include/crypto/cryptodev.h:
