@@ -1,0 +1,6 @@
+/bin x86 binaries for QNX 6.5/6.6
+/media-ctl-qnx-0.0.1 - media-ctl project fork (http://git.ideasonboard.org/media-ctl.git)
+/v4l-utils-qnx-1.1.0 - v4l-utils project fork (http://git.linuxtv.org/v4l-utils.git)
+
+Porting is completed. In future new snapshots will be ported again. But for devu-uvc driver
+current code is enough.
